@@ -54,13 +54,15 @@
     </script>
   </head>
   <body>
-    <h1 class="d-none">Caspen Technologies</h1>
+    <!-- loading content / before page done loading -->
     <div id="fadeinContent"></div>
     <div id="loader-wrapper">
       <div class="spinner-border mt-5" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
+
+    <!-- navigation -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary caspen-nav">
       <div class="container">
         <a class="navbar-brand" href="index.html"
@@ -141,6 +143,7 @@
     </nav>
 
     <main>
+      <!-- Pigeon Download for Device :: section -->
       <section class="sec-pigeon-download">
         <div class="pigeon-download-container container">
           <div class="col-6 pd-content">
@@ -179,16 +182,16 @@
       </section>
     </main>
 
-    <!-- <div id="cookie-notice" class="position-fixed bottom-0 w-100 p-2 text-bg-dark">
-    <p>This website uses cookies so that we can provide you with the best website experience. By clicking “I Accept” you acknowledge the use of cookies and to our <a href="#"><u>Privacy Policy</u></a>.</p>
-    <button type="button" id="i-accept" class="btn btn-primary">I Accept</button>
-  </div> -->
-
-    <footer>
+    <!-- footer -->
+    <footer
+      data-aos="fade-in"
+      data-aos-easing="ease-in-sine"
+      data-aos-once="true"
+    >
       <div class="container pb-3">
         <div class="row justify-content-center py-4">
           <div class="col">
-            <a href="#"
+            <a href="/"
               ><img
                 src="assets/images/caspen-logo-white.png"
                 alt="Caspen Technologies"
@@ -233,23 +236,24 @@
         <div class="footer-divider"></div>
 
         <div class="row pb-5">
+          <!-- footer directory -->
           <div class="col">
             <div class="footer-directory-container">
               <div class="footer-directory-col">
                 <div class="footer-directory-title">Company</div>
-                <a class="footer-directory-link" href="#">About us</a>
+                <a class="footer-directory-link" href="/#about">About us</a>
                 <a class="footer-directory-link" href="#">Documentation</a>
                 <a class="footer-directory-link" href="#">Join us</a>
               </div>
-
               <div class="footer-directory-col">
                 <div class="footer-directory-title">Product</div>
-                <a class="footer-directory-link" href="#">VOXIS</a>
-                <a class="footer-directory-link" href="#">PIGEON</a>
+                <a class="footer-directory-link" href="voxis.html">VOXIS</a>
+                <a class="footer-directory-link" href="pigeon.html">PIGEON</a>
               </div>
             </div>
           </div>
 
+          <!-- footer newsletter subscription -->
           <div class="col-4">
             <div class="newsletter-container">
               <div class="newsletter-txt">
@@ -261,8 +265,8 @@
                     type="email"
                     class="form-control input-newsletter"
                     id="emailInput"
-                    aria-describedby="emailHelp"
                     placeholder="Email"
+                    required
                   />
                 </div>
                 <button type="submit" class="btn btn-newsletter">Submit</button>
@@ -272,6 +276,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
       crossorigin="anonymous"
@@ -280,31 +285,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript">
-      (function ($) {
-        $("#i-accept").on("click", function () {
-          if (localStorage.hidecookiebar !== "1") {
-            $("#cookie-notice").hide();
-            localStorage.hidecookiebar = "1";
-          }
-        });
-        if (localStorage.hidecookiebar == "1") {
-          $("#cookie-notice").hide();
-        }
-      })(jQuery);
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        setTimeout(function () {
-          document.getElementById("fadein").remove();
-        }, 1000);
-      };
-    </script>
-    <script type="text/javascript">
-      $(window).on("load", function () {
-        $("#loader-wrapper").fadeOut(700);
-      });
-    </script>
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>

@@ -55,13 +55,18 @@
     </script>
   </head>
   <body>
+    <!-- SEO H1 -->
     <h1 class="d-none">Caspen Technologies</h1>
+
+    <!-- loading content / before page done loading -->
     <div id="fadeinContent"></div>
     <div id="loader-wrapper">
       <div class="spinner-border mt-5" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
+
+    <!-- navigation -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary caspen-nav">
       <div class="container">
         <a class="navbar-brand" href="/"
@@ -141,7 +146,9 @@
       </div>
     </nav>
 
-    <div id="landingCarousel" class="carousel slide" data-interval="true">
+    <!-- carousel -->
+    <div id="landingCarousel" class="carousel slide" data-ride="carousel">
+      <!-- carousel indicators -->
       <div class="carousel-indicators">
         <button
           type="button"
@@ -149,21 +156,19 @@
           data-bs-slide-to="0"
           class="active"
           aria-current="true"
-          aria-label="Slide 1"
         ></button>
         <button
           type="button"
           data-bs-target="#landingCarousel"
           data-bs-slide-to="1"
-          aria-label="Slide 2"
         ></button>
         <button
           type="button"
           data-bs-target="#landingCarousel"
           data-bs-slide-to="2"
-          aria-label="Slide 3"
         ></button>
       </div>
+      <!-- carousel slides content -->
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
@@ -239,7 +244,7 @@
           </div>
         </div>
       </div>
-
+      <!-- carousel buttons -->
       <button
         class="carousel-control-prev"
         type="button"
@@ -263,6 +268,7 @@
     </div>
 
     <main>
+      <!-- Our Products :: section -->
       <section class="sec-our-products">
         <div class="container">
           <h2
@@ -365,6 +371,7 @@
         </div>
       </section>
 
+      <!-- All About Us :: section -->
       <section class="sec-about" id="about">
         <div class="container">
           <div class="row align-items-center">
@@ -398,6 +405,7 @@
         </div>
       </section>
 
+      <!-- Figure Data :: section -->
       <section class="sec-figure-data">
         <div class="container">
           <div class="row">
@@ -470,6 +478,7 @@
         </div>
       </section>
 
+      <!-- Contact Us :: section -->
       <section class="sec-contact" id="contact">
         <div class="container">
           <div
@@ -518,12 +527,14 @@
         </div>
       </section>
     </main>
-
+    
+    <!-- Accept Cookies :: notice -->
     <!-- <div id="cookie-notice" class="position-fixed bottom-0 w-100 p-2 text-bg-dark">
-    <p>This website uses cookies so that we can provide you with the best website experience. By clicking “I Accept” you acknowledge the use of cookies and to our <a href="#"><u>Privacy Policy</u></a>.</p>
-    <button type="button" id="i-accept" class="btn btn-primary">I Accept</button>
-  </div> -->
+      <p>This website uses cookies so that we can provide you with the best website experience. By clicking “I Accept” you acknowledge the use of cookies and to our <a href="#"><u>Privacy Policy</u></a>.</p>
+      <button type="button" id="i-accept" class="btn btn-primary">I Accept</button>
+    </div> -->
 
+    <!-- footer -->
     <footer
       data-aos="fade-in"
       data-aos-easing="ease-in-sine"
@@ -577,6 +588,7 @@
         <div class="footer-divider"></div>
 
         <div class="row pb-5">
+          <!-- footer directory -->
           <div class="col">
             <div class="footer-directory-container">
               <div class="footer-directory-col">
@@ -585,7 +597,6 @@
                 <a class="footer-directory-link" href="#">Documentation</a>
                 <a class="footer-directory-link" href="#">Join us</a>
               </div>
-
               <div class="footer-directory-col">
                 <div class="footer-directory-title">Product</div>
                 <a class="footer-directory-link" href="voxis.html">VOXIS</a>
@@ -594,6 +605,7 @@
             </div>
           </div>
 
+          <!-- footer newsletter subscription -->
           <div class="col-4">
             <div class="newsletter-container">
               <div class="newsletter-txt">
@@ -605,8 +617,8 @@
                     type="email"
                     class="form-control input-newsletter"
                     id="emailInput"
-                    aria-describedby="emailHelp"
                     placeholder="Email"
+                    required
                   />
                 </div>
                 <button type="submit" class="btn btn-newsletter">Submit</button>
@@ -616,6 +628,7 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
       crossorigin="anonymous"
@@ -625,7 +638,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>

@@ -9,10 +9,6 @@ body.bg-pigeon {
   background-repeat: no-repeat;
 }
 
-.bg-white {
-  z-index: 99;
-}
-
 #fadeinContent {
   position: fixed;
   width: 100%;
@@ -47,6 +43,11 @@ body.bg-pigeon {
   padding: 12px !important;
   margin: 0 8px;
   font-size: 14px;
+  border-radius: 30px;
+  transition: 0.3s all;
+}
+.caspen-nav .nav-link:hover {
+  background: rgba(120, 121, 241, 0.1);
 }
 .caspen-nav .dropdown-menu-lang.dropdown-toggle::after {
   display: none;
