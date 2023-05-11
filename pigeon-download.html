@@ -38,7 +38,7 @@
     <meta name="twitter:title" content="" />
     <meta name="twitter:description" content="" />
     <meta name="twitter:image" content="" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- <link rel="manifest" href="manifest.webmanifest" /> -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
@@ -55,22 +55,15 @@
   </head>
   <body>
     <h1 class="d-none">Caspen Technologies</h1>
-    <div
-      id="fadein"
-      class="position-fixed w-100 h-100 bg-white"
-      style="animation: fadeinall 1s normal 0.3s both"
-    ></div>
-    <div
-      id="loader-wrapper"
-      class="bg-white position-fixed z-3 w-100 h-100 text-center"
-    >
+    <div id="fadeinContent"></div>
+    <div id="loader-wrapper">
       <div class="spinner-border mt-5" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary caspen-nav">
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><img
             src="assets/images/caspen-logo.png"
             alt="Caspen Technologies"
@@ -93,7 +86,7 @@
           id="navbarNavDropdown"
         >
           <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown ml-lg-auto">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -104,25 +97,46 @@
                 Products
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">VOXIS</a></li>
-                <li><a class="dropdown-item" href="#">PIGEON</a></li>
+                <li><a class="dropdown-item" href="voxis.html">VOXIS</a></li>
+                <li><a class="dropdown-item" href="pigeon.html">PIGEON</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+
+            <li class="nav-item ml-lg-auto">
+              <a
+                class="btn btn-caspen-purple btn-download"
+                href="#"
+                role="button"
+              >
+                Download
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="btn btn-lang dropdown-toggle dropdown-menu-lang"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                En
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">中文</a></li>
+                <li><a class="dropdown-item active" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">日本語</a></li>
+                <li><a class="dropdown-item" href="#">한국어</a></li>
+              </ul>
             </li>
           </ul>
         </div>
-        <div>
-          <a class="btn btn-caspen-purple btn-download" href="#" role="button">
-            Download
-          </a>
-        </div>
-
-        <a class="btn btn-lang" href="#" role="button">En</a>
       </div>
     </nav>
 

@@ -39,7 +39,7 @@
     <meta name="twitter:title" content="" />
     <meta name="twitter:description" content="" />
     <meta name="twitter:image" content="" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- <link rel="manifest" href="manifest.webmanifest" /> -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
@@ -56,23 +56,15 @@
   </head>
   <body>
     <h1 class="d-none">Caspen Technologies</h1>
-    <div
-      id="fadein"
-      class="position-fixed w-100 h-100 bg-white"
-      style="animation: fadeinall 1s normal 0.3s both"
-    ></div>
-    <div
-      id="loader-wrapper"
-      class="bg-white position-fixed z-3 w-100 h-100 text-center"
-    >
+    <div id="fadeinContent"></div>
+    <div id="loader-wrapper">
       <div class="spinner-border mt-5" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary caspen-nav">
       <div class="container">
-        <!-- <div class="d-flex align-items-center justify-content-between w-100"> -->
-        <a class="navbar-brand" href="index.html"
+        <a class="navbar-brand" href="/"
           ><img
             src="assets/images/caspen-logo.png"
             alt="Caspen Technologies"
@@ -95,7 +87,7 @@
           id="navbarNavDropdown"
         >
           <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown ml-lg-auto">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -116,16 +108,36 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+
+            <li class="nav-item ml-lg-auto">
+              <a
+                class="btn btn-caspen-purple btn-download"
+                href="voxis-download.html"
+                role="button"
+              >
+                Download
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="btn btn-lang dropdown-toggle dropdown-menu-lang"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                En
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">中文</a></li>
+                <li><a class="dropdown-item active" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">日本語</a></li>
+                <li><a class="dropdown-item" href="#">한국어</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
-        <div>
-          <a class="btn btn-caspen-purple btn-download" href="#" role="button">
-            Download
-          </a>
-        </div>
-
-        <a class="btn btn-lang" href="#" role="button">En</a>
-        <!-- </div> -->
       </div>
     </nav>
 
@@ -161,11 +173,13 @@
             title="Empowering Your Digital Future"
           />
           <div class="carousel-content carousel-main container">
-            <h2 data-aos="fade-up" data-aos-once="true">Empowering Your <br />Digital Future</h2>
+            <h2 data-aos="fade-up" data-aos-once="true">
+              Empowering Your <br />Digital Future
+            </h2>
             <div class="mt-3">
               <a
                 class="btn btn-caspen-white btn-download"
-                href="#"
+                href="voxis-download.html"
                 role="button"
                 data-aos="fade-up"
                 data-aos-once="true"
@@ -187,7 +201,12 @@
             <h2 data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
               "Stay Connected, Anytime, <br />Anywhere with our <br />Chat App."
             </h2>
-            <div class="mt-2" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+            <div
+              class="mt-2"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-once="true"
+            >
               <a href="voxis.html" class="more-link"
                 >More about <span>Voxis</span></a
               >
@@ -206,7 +225,12 @@
               <h2 data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
                 Power up your customer support with Pigeon
               </h2>
-              <div class="mt-3" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+              <div
+                class="mt-3"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-once="true"
+              >
                 <a href="pigeon.html" class="more-link"
                   >More about <span>Pigeon</span></a
                 >
@@ -247,6 +271,7 @@
             data-aos-anchor="#aos_anchor_products"
             id="aos_anchor_products"
             data-aos-anchor-placement="top-center"
+            data-aos-delay="100"
             data-aos-once="true"
           >
             Our Products
@@ -274,7 +299,7 @@
             <div
               class="col-9"
               data-aos="fade-in"
-              data-aos-delay="600"
+              data-aos-delay="500"
               data-aos-anchor="#aos_anchor_products"
               data-aos-anchor-placement="top-center"
               data-aos-once="true"
@@ -344,7 +369,7 @@
         <div class="container">
           <div class="row align-items-center">
             <div
-              class="col-6 d-flex justify-content-center"
+              class="col-md-6 d-flex justify-content-center"
               data-aos="fade-right"
               data-aos-anchor="#aos_anchor_about"
               id="aos_anchor_about"
@@ -353,7 +378,7 @@
               <h2 class="sec-title">All about us</h2>
             </div>
             <div
-              class="col-6"
+              class="col-md-6"
               data-aos="fade-left"
               data-aos-anchor="#aos_anchor_about"
               data-aos-once="true"
@@ -377,7 +402,7 @@
         <div class="container">
           <div class="row">
             <div
-              class="col-4"
+              class="col-md-4"
               data-aos="fade-right"
               data-aos-anchor="#aos_anchor_figure"
               id="aos_anchor_figure"
@@ -450,7 +475,6 @@
           <div
             data-aos="fade-in"
             data-aos-anchor="#aos_anchor_contact"
-            data-aos-anchor-placement="top-center"
             id="aos_anchor_contact"
             data-aos-once="true"
           >
@@ -462,11 +486,11 @@
             />
           </div>
         </div>
+        <!-- data-aos-anchor-placement="top-center" -->
         <div
           class="contact-container"
           data-aos="fade-in"
           data-aos-anchor="#aos_anchor_contact"
-          data-aos-anchor-placement="top-center"
           data-aos-delay="200"
           data-aos-once="true"
         >
@@ -500,11 +524,15 @@
     <button type="button" id="i-accept" class="btn btn-primary">I Accept</button>
   </div> -->
 
-    <footer data-aos="fade-in" data-aos-easing="ease-in-sine" data-aos-once="true">
+    <footer
+      data-aos="fade-in"
+      data-aos-easing="ease-in-sine"
+      data-aos-once="true"
+    >
       <div class="container pb-3">
         <div class="row justify-content-center py-4">
           <div class="col">
-            <a href="#"
+            <a href="/"
               ><img
                 src="assets/images/caspen-logo-white.png"
                 alt="Caspen Technologies"
@@ -553,15 +581,15 @@
             <div class="footer-directory-container">
               <div class="footer-directory-col">
                 <div class="footer-directory-title">Company</div>
-                <a class="footer-directory-link" href="#">About us</a>
+                <a class="footer-directory-link" href="/#about">About us</a>
                 <a class="footer-directory-link" href="#">Documentation</a>
                 <a class="footer-directory-link" href="#">Join us</a>
               </div>
 
               <div class="footer-directory-col">
                 <div class="footer-directory-title">Product</div>
-                <a class="footer-directory-link" href="#">VOXIS</a>
-                <a class="footer-directory-link" href="#">PIGEON</a>
+                <a class="footer-directory-link" href="voxis.html">VOXIS</a>
+                <a class="footer-directory-link" href="pigeon.html">PIGEON</a>
               </div>
             </div>
           </div>
@@ -597,8 +625,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
 
     <script src="assets/js/scripts.js"></script>
   </body>

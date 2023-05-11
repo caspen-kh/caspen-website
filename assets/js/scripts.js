@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   window.onload = function () {
     setTimeout(function () {
-      document.getElementById("fadein").remove();
+      $("#fadeinContent").remove();
       AOS.init();
     }, 1000);
   };
@@ -74,7 +74,7 @@ const numberCounter = () => {
           Counter: $(this).text(),
         },
         {
-          duration: 3000,
+          duration: 5000,
           easing: "swing",
           step: function (now) {
             now = Number(Math.ceil(now)).toLocaleString("en");

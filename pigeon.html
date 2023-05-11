@@ -20,6 +20,7 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -38,7 +39,7 @@
     <meta name="twitter:title" content="" />
     <meta name="twitter:description" content="" />
     <meta name="twitter:image" content="" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- <link rel="manifest" href="manifest.webmanifest" /> -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
@@ -55,28 +56,20 @@
   </head>
   <body class="bg-pigeon">
     <h1 class="d-none">Caspen Technologies</h1>
-    <div
-      id="fadein"
-      class="position-fixed w-100 h-100 bg-white"
-      style="animation: fadeinall 1s normal 0.3s both"
-    ></div>
-    <div
-      id="loader-wrapper"
-      class="bg-white position-fixed z-3 w-100 h-100 text-center"
-    >
+    <div id="fadeinContent"></div>
+    <div id="loader-wrapper">
       <div class="spinner-border mt-5" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary caspen-nav">
       <div class="container">
-        <!-- <div class="d-flex align-items-center justify-content-between w-100"> -->
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><img
-            src="assets/images/pigeon-logo.png"
-            alt="Pigeon"
-            title="Pigeon"
-            width="110"
+            src="assets/images/caspen-logo.png"
+            alt="Caspen Technologies"
+            title="Caspen Technologies"
+            width="168"
         /></a>
         <button
           class="navbar-toggler"
@@ -94,25 +87,45 @@
           id="navbarNavDropdown"
         >
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+            <li class="nav-item ml-lg-auto">
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="/#contact">Contact</a>
+            </li>
+
+            <li class="nav-item ml-lg-auto">
+              <a
+                class="btn btn-caspen-purple btn-download"
+                href="#"
+                role="button"
+              >
+                Download
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="btn btn-lang dropdown-toggle dropdown-menu-lang"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                En
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">中文</a></li>
+                <li><a class="dropdown-item active" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">日本語</a></li>
+                <li><a class="dropdown-item" href="#">한국어</a></li>
+              </ul>
             </li>
           </ul>
         </div>
-        <div>
-          <a class="btn btn-caspen-purple btn-download" href="#" role="button">
-            Download
-          </a>
-        </div>
-
-        <a class="btn btn-lang" href="#" role="button">En</a>
-        <!-- </div> -->
       </div>
     </nav>
 
@@ -121,11 +134,21 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-6">
-              <div class="ph-img">
+              <div
+                class="ph-img"
+                data-aos="zoom-in-up"
+                data-aos-delay="100"
+                data-aos-once="true"
+              >
                 <img src="assets/images/pigeon-img-01.png" alt="" title="" />
               </div>
             </div>
-            <div class="col-6">
+            <div
+              class="col-6"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-once="true"
+            >
               <div class="ph-txt">
                 Power up your customer support with <span>Pigeon</span>
               </div>
@@ -151,7 +174,12 @@
         <div class="container">
           <div class="row">
             <div class="col-6">
-              <div>
+              <div
+                data-aos="fade-right"
+                data-aos-delay="100"
+                data-aos-anchor="#aos_anchor_pigeon_support"
+                data-aos-once="true"
+              >
                 <img
                   src="assets/images/pigeon-img-03.png"
                   alt=""
@@ -159,10 +187,23 @@
                   style="width: 100%; max-width: 280px"
                 />
               </div>
-              <h2 class="sec-title">
+              <h2
+                class="sec-title"
+                data-aos="fade-right"
+                data-aos-delay="300"
+                data-aos-anchor="#aos_anchor_pigeon_support"
+                id="aos_anchor_pigeon_support"
+                data-aos-once="true"
+              >
                 Provide support without breaking a sweat
               </h2>
-              <p class="sec-desc mt-3">
+              <p
+                class="sec-desc mt-3"
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-anchor="#aos_anchor_pigeon_support"
+                data-aos-once="true"
+              >
                 <strong>Pigeon</strong> compiles customer tickets you receive
                 <br />from email, phone, chat, social media, and your
                 <br />website or blog in a single screen <br />for your support
@@ -170,7 +211,12 @@
               </p>
             </div>
             <div class="col-6">
-              <div>
+              <div
+                data-aos="fade-left"
+                data-aos-delay="700"
+                data-aos-anchor="#aos_anchor_pigeon_support"
+                data-aos-once="true"
+              >
                 <img
                   src="assets/images/pigeon-img-02.png"
                   alt=""
@@ -187,7 +233,13 @@
         <div class="container position-relative">
           <div class="row">
             <div class="col-6">
-              <div class="ps-img">
+              <div
+                class="ps-img"
+                data-aos="fade-down"
+                data-aos-delay="100"
+                data-aos-anchor="#aos_anchor_pigeon_solution"
+                data-aos-once="true"
+              >
                 <img
                   src="assets/images/pigeon-img-04.png"
                   alt=""
@@ -196,7 +248,14 @@
                 />
               </div>
             </div>
-            <div class="col-6">
+            <div
+              class="col-6"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-anchor="#aos_anchor_pigeon_solution"
+              id="aos_anchor_pigeon_solution"
+              data-aos-once="true"
+            >
               <h2 class="sec-title">
                 The only <strong>AI</strong> customer service solution you'll
                 need
@@ -214,13 +273,26 @@
       <section class="sec-pigeon-knowledge">
         <div class="container">
           <div class="row">
-            <div class="col-5">
+            <div
+              class="col-5"
+              data-aos="fade-right"
+              data-aos-delay="100"
+              data-aos-anchor="#aos_anchor_pigeon_knowledge"
+              id="aos_anchor_pigeon_knowledge"
+              data-aos-once="true"
+            >
               <h2 class="sec-title"><span>Knowledge base</span> software</h2>
               <p class="sec-desc">
                 Create stunning knowledge <br />repositories & FAQs with ease.
               </p>
             </div>
-            <div class="col-7">
+            <div
+              class="col-7"
+              data-aos="fade-left"
+              data-aos-delay="100"
+              data-aos-anchor="#aos_anchor_pigeon_knowledge"
+              data-aos-once="true"
+            >
               <div>
                 <img
                   src="assets/images/pigeon-img-05.png"
@@ -237,12 +309,25 @@
       <section class="sec-pigeon-feedback">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div
+              class="col-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-anchor="#aos_anchor_pigeon_feedback"
+              data-aos-once="true"
+            >
               <div class="pf-img">
                 <img src="assets/images/pigeon-img-06.png" alt="" title="" />
               </div>
             </div>
-            <div class="col-6">
+            <div
+              class="col-6"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-anchor="#aos_anchor_pigeon_feedback"
+              id="aos_anchor_pigeon_feedback"
+              data-aos-once="true"
+            >
               <h2 class="sec-title">Star Feedback Functions</h2>
               <p class="sec-desc mt-3">
                 <strong>Pigeon</strong> compiles customer tickets you receive
@@ -257,11 +342,24 @@
 
       <section class="sec-pigeon-software">
         <div class="container ps-container">
-          <h2 class="sec-title">
+          <h2
+            class="sec-title"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-anchor="#aos_anchor_pigeon_software"
+            id="aos_anchor_pigeon_software"
+            data-aos-once="true"
+          >
             Customer support software for any business, any size
           </h2>
           <div class="row mt-5 pt-5">
-            <div class="col-md-4">
+            <div
+              class="col-md-4"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-anchor="#aos_anchor_pigeon_software"
+              data-aos-once="true"
+            >
               <div class="cs-software-icon">
                 <img
                   src="assets/images/cs-software-icon-01.png"
@@ -276,7 +374,13 @@
                 social media — all in one place.
               </p>
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4"
+              data-aos="fade-in"
+              data-aos-delay="300"
+              data-aos-anchor="#aos_anchor_pigeon_software"
+              data-aos-once="true"
+            >
               <div class="cs-software-icon">
                 <img
                   src="assets/images/cs-software-icon-02.png"
@@ -290,7 +394,13 @@
                 Quick and easy setup allows you to grow effectively over time.
               </p>
             </div>
-            <div class="col-md-4">
+            <div
+              class="col-md-4"
+              data-aos="fade-in"
+              data-aos-delay="400"
+              data-aos-anchor="#aos_anchor_pigeon_software"
+              data-aos-once="true"
+            >
               <div class="cs-software-icon">
                 <img
                   src="assets/images/cs-software-icon-03.png"
@@ -311,7 +421,13 @@
 
       <section class="sec-pigeon-device">
         <div class="pigeon-device-container container">
-          <div class="col-6 pd-content">
+          <div
+            class="col-6 pd-content"
+            data-aos="fade-right"
+            data-aos-anchor="#aos_anchor_pigeon_device"
+            id="aos_anchor_pigeon_device"
+            data-aos-once="true"
+          >
             <h1 class="pd-title">Get Pigeon for your device</h1>
             <p class="pd-desc">An adventure awaits.</p>
             <div class="mt-4 download-device-btns-container">
@@ -343,7 +459,12 @@
               </a>
             </div>
           </div>
-          <div class="col-6 pd-img">
+          <div
+            class="col-6 pd-img"
+            data-aos="fade-left"
+            data-aos-anchor="#aos_anchor_pigeon_device"
+            data-aos-once="true"
+          >
             <img
               src="assets/images/pigeon-download-img-01.png"
               alt="Get VOXIS for your device"
@@ -360,7 +481,11 @@
     <button type="button" id="i-accept" class="btn btn-primary">I Accept</button>
   </div> -->
 
-    <footer>
+    <footer
+      data-aos="fade-in"
+      data-aos-easing="ease-in-sine"
+      data-aos-once="true"
+    >
       <div class="container pb-3">
         <div class="row justify-content-center py-4">
           <div class="col">
@@ -456,31 +581,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript">
-      (function ($) {
-        $("#i-accept").on("click", function () {
-          if (localStorage.hidecookiebar !== "1") {
-            $("#cookie-notice").hide();
-            localStorage.hidecookiebar = "1";
-          }
-        });
-        if (localStorage.hidecookiebar == "1") {
-          $("#cookie-notice").hide();
-        }
-      })(jQuery);
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        setTimeout(function () {
-          document.getElementById("fadein").remove();
-        }, 1000);
-      };
-    </script>
-    <script type="text/javascript">
-      $(window).on("load", function () {
-        $("#loader-wrapper").fadeOut(700);
-      });
-    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>
