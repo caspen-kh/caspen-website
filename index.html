@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Caspen Technologies</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@v1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+  </head>
+  <body>
+    <h1 class="d-none">Caspen Technologies</h1>
+    <div
+      id="fadein"
+      class="position-fixed w-100 h-100 bg-white"
+      style="animation: fadeinall 1s normal 0.3s both"
+    ></div>
+    <div
+      id="loader-wrapper"
+      class="bg-white position-fixed z-3 w-100 h-100 text-center"
+    >
+      <div class="spinner-border mt-5" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary caspen-nav">
+      <div class="container">
+        <!-- <div class="d-flex align-items-center justify-content-between w-100"> -->
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="assets/images/caspen-logo.png"
+            alt="Caspen Technologies"
+            title="Caspen Technologies"
+            width="168"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="voxis.html">VOXIS</a></li>
+                <li><a class="dropdown-item" href="pigeon.html">PIGEON</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a class="btn btn-caspen-purple btn-download" href="#" role="button">
+            Download
+          </a>
+        </div>
+
+        <a class="btn btn-lang" href="#" role="button">En</a>
+        <!-- </div> -->
+      </div>
+    </nav>
+
+    <div id="landingCarousel" class="carousel slide" data-interval="true">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#landingCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#landingCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#landingCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/images/carousel-img-01.png"
+            class="d-block w-100"
+            alt="Empowering Your Digital Future"
+            title="Empowering Your Digital Future"
+          />
+          <div class="carousel-content carousel-main container">
+            <h2 data-aos="fade-up" data-aos-once="true">Empowering Your <br />Digital Future</h2>
+            <div class="mt-3">
+              <a
+                class="btn btn-caspen-white btn-download"
+                href="#"
+                role="button"
+                data-aos="fade-up"
+                data-aos-once="true"
+                data-aos-delay="300"
+              >
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/carousel-img-02.png"
+            class="d-block w-100"
+            alt="VOXIS"
+            title="VOXIS"
+          />
+          <div class="carousel-content carousel-voxis container">
+            <h2 data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+              "Stay Connected, Anytime, <br />Anywhere with our <br />Chat App."
+            </h2>
+            <div class="mt-2" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+              <a href="voxis.html" class="more-link"
+                >More about <span>Voxis</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/images/carousel-img-03.png"
+            class="d-block w-100"
+            alt="Pigeon"
+            title="Pigeon"
+          />
+          <div class="carousel-content carousel-pigeon container">
+            <div class="cp-col">
+              <h2 data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+                Power up your customer support with Pigeon
+              </h2>
+              <div class="mt-3" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+                <a href="pigeon.html" class="more-link"
+                  >More about <span>Pigeon</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#landingCarousel"
+        data-bs-slide="prev"
+        data-bs-interval="touch"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#landingCarousel"
+        data-bs-slide="next"
+        data-bs-interval="touch"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <main>
+      <section class="sec-our-products">
+        <div class="container">
+          <h2
+            class="sec-title"
+            data-aos="fade-right"
+            data-aos-anchor="#aos_anchor_products"
+            id="aos_anchor_products"
+            data-aos-anchor-placement="top-center"
+            data-aos-once="true"
+          >
+            Our Products
+          </h2>
+          <div class="row">
+            <div class="col-3 product-selection">
+              <ul
+                class="selection-tab-list"
+                data-aos="fade-right"
+                data-aos-delay="300"
+                data-aos-anchor="#aos_anchor_products"
+                data-aos-anchor-placement="top-center"
+                data-aos-once="true"
+              >
+                <li>
+                  <a class="tab-item active" tabtarget="#product_voxis"
+                    >VOXIS</a
+                  >
+                </li>
+                <li>
+                  <a class="tab-item" tabtarget="#product_pigeon">PIGEON</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-9"
+              data-aos="fade-in"
+              data-aos-delay="600"
+              data-aos-anchor="#aos_anchor_products"
+              data-aos-anchor-placement="top-center"
+              data-aos-once="true"
+            >
+              <div class="product-showcase" id="product_voxis">
+                <h3 class="product-title">VOXIS</h3>
+                <p class="product-desc">
+                  "Connect and Chat Anytime, Anywhere."
+                </p>
+                <div class="mt-3">
+                  <a
+                    class="btn btn-caspen-purple btn-download"
+                    href="voxis-download.html"
+                    role="button"
+                  >
+                    Download
+                  </a>
+                </div>
+                <div class="mt-5">
+                  <img
+                    src="assets/images/product-voxis-img-01.png"
+                    alt="VOXIS"
+                    title="VOXIS"
+                    width="100%"
+                  />
+                </div>
+                <div class="more-link-container">
+                  <a href="voxis.html" class="more-link"
+                    >More about <span>Voxis</span></a
+                  >
+                </div>
+              </div>
+              <div class="product-showcase d-none" id="product_pigeon">
+                <h3 class="product-title">PIGEON</h3>
+                <p class="product-desc">
+                  "Experience hassle-free customer service with us."
+                </p>
+                <div class="mt-3">
+                  <a
+                    class="btn btn-caspen-purple btn-download"
+                    href="pigeon-download.html"
+                    role="button"
+                  >
+                    Download
+                  </a>
+                </div>
+                <div class="">
+                  <img
+                    src="assets/images/product-pigeon-img-01.png"
+                    alt="PIGEON"
+                    title="PIGEON"
+                    width="100%"
+                  />
+                </div>
+                <div class="more-link-container">
+                  <a href="pigeon.html" class="more-link"
+                    >More about <span>Pigeon</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-about" id="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div
+              class="col-6 d-flex justify-content-center"
+              data-aos="fade-right"
+              data-aos-anchor="#aos_anchor_about"
+              id="aos_anchor_about"
+              data-aos-once="true"
+            >
+              <h2 class="sec-title">All about us</h2>
+            </div>
+            <div
+              class="col-6"
+              data-aos="fade-left"
+              data-aos-anchor="#aos_anchor_about"
+              data-aos-once="true"
+            >
+              <div class="about-desc-content">
+                <p class="sec-para">
+                  An IT company is a business that specializes in providing
+                  technology-related products and services to its clients. Such
+                  companies can range in size from small startups to large
+                  corporations and can offer a wide range of services, including
+                  software development, web development, cybersecurity, cloud
+                  computing, data analysis, and digital marketing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-figure-data">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-4"
+              data-aos="fade-right"
+              data-aos-anchor="#aos_anchor_figure"
+              id="aos_anchor_figure"
+              data-aos-once="true"
+            >
+              <p class="sec-para">This extra text just helps here</p>
+              <p class="sec-para">
+                As long as he's here everything will be fine. This text
+                complements the previous one
+              </p>
+            </div>
+          </div>
+          <div class="figure-data-container">
+            <div
+              class="figure-data-content"
+              data-aos="fade-up"
+              data-aos-anchor="#aos_anchor_figure"
+              data-aos-delay="300"
+              data-aos-once="true"
+            >
+              <div class="figure-amount"><span class="count">895</span></div>
+              <div class="figure-title">Projects</div>
+            </div>
+            <div
+              class="figure-data-content"
+              data-aos="fade-up"
+              data-aos-anchor="#aos_anchor_figure"
+              data-aos-delay="500"
+              data-aos-once="true"
+            >
+              <div class="figure-amount"><span class="count">102</span></div>
+              <div class="figure-title">Files</div>
+            </div>
+            <div
+              class="figure-data-content"
+              data-aos="fade-up"
+              data-aos-anchor="#aos_anchor_figure"
+              data-aos-delay="700"
+              data-aos-once="true"
+            >
+              <div class="figure-amount"><span class="count">300</span></div>
+              <div class="figure-title">Works</div>
+            </div>
+            <div
+              class="figure-data-content"
+              data-aos="fade-up"
+              data-aos-anchor="#aos_anchor_figure"
+              data-aos-delay="900"
+              data-aos-once="true"
+            >
+              <div class="figure-amount"><span class="count">25</span></div>
+              <div class="figure-title">Orders</div>
+            </div>
+            <div
+              class="figure-data-content"
+              data-aos="fade-up"
+              data-aos-anchor="#aos_anchor_figure"
+              data-aos-delay="1000"
+              data-aos-once="true"
+            >
+              <div class="figure-amount"><span class="count">12</span></div>
+              <div class="figure-title">Awwards</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-contact" id="contact">
+        <div class="container">
+          <div
+            data-aos="fade-in"
+            data-aos-anchor="#aos_anchor_contact"
+            data-aos-anchor-placement="top-center"
+            id="aos_anchor_contact"
+            data-aos-once="true"
+          >
+            <img
+              src="assets/images/contact-us-map.png"
+              alt="Our location"
+              title="Our location"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div
+          class="contact-container"
+          data-aos="fade-in"
+          data-aos-anchor="#aos_anchor_contact"
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
+          <div class="row mt-4">
+            <h2 class="sec-title mb-4">Contact us</h2>
+            <div class="col-6">
+              <p class="sec-desc">
+                This extra text just helps here <br />As long as he's here
+                everything will be fine. This text complements the previous one
+              </p>
+            </div>
+            <div class="col-3">
+              <div class="contact-details">
+                <div class="contact-address">Elviaveien 2, 1252 Oslo</div>
+                <div class="contact-phone">(304) 434-1469</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="contact-details">
+                <div class="contact-address">Elviaveien 2, 1252 Oslo</div>
+                <div class="contact-phone">(304) 434-1469</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div id="cookie-notice" class="position-fixed bottom-0 w-100 p-2 text-bg-dark">
+    <p>This website uses cookies so that we can provide you with the best website experience. By clicking “I Accept” you acknowledge the use of cookies and to our <a href="#"><u>Privacy Policy</u></a>.</p>
+    <button type="button" id="i-accept" class="btn btn-primary">I Accept</button>
+  </div> -->
+
+    <footer data-aos="fade-in" data-aos-easing="ease-in-sine" data-aos-once="true">
+      <div class="container pb-3">
+        <div class="row justify-content-center py-4">
+          <div class="col">
+            <a href="#"
+              ><img
+                src="assets/images/caspen-logo-white.png"
+                alt="Caspen Technologies"
+                title="Caspen Technologies"
+                width="150"
+            /></a>
+          </div>
+          <div class="col-md-auto">
+            <div class="social-icons-container">
+              <a class="social-icon" href="#"
+                ><img
+                  src="assets/images/social-icon-fb.png"
+                  alt="Facebook"
+                  title="Facebook"
+                  width="28"
+              /></a>
+              <a class="social-icon" href="#"
+                ><img
+                  src="assets/images/social-icon-gg.png"
+                  alt="Google"
+                  title="Google"
+                  width="28"
+              /></a>
+              <a class="social-icon" href="#"
+                ><img
+                  src="assets/images/social-icon-tw.png"
+                  alt="Twitter"
+                  title="Twitter"
+                  width="28"
+              /></a>
+              <a class="social-icon" href="#"
+                ><img
+                  src="assets/images/social-icon-yt.png"
+                  alt="Youtube"
+                  title="Youtube"
+                  width="28"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="row pb-5">
+          <div class="col">
+            <div class="footer-directory-container">
+              <div class="footer-directory-col">
+                <div class="footer-directory-title">Company</div>
+                <a class="footer-directory-link" href="#">About us</a>
+                <a class="footer-directory-link" href="#">Documentation</a>
+                <a class="footer-directory-link" href="#">Join us</a>
+              </div>
+
+              <div class="footer-directory-col">
+                <div class="footer-directory-title">Product</div>
+                <a class="footer-directory-link" href="#">VOXIS</a>
+                <a class="footer-directory-link" href="#">PIGEON</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="newsletter-container">
+              <div class="newsletter-txt">
+                Join the newsletter and read the new posts first
+              </div>
+              <form>
+                <div class="form-group mt-3 mb-2">
+                  <input
+                    type="email"
+                    class="form-control input-newsletter"
+                    id="emailInput"
+                    aria-describedby="emailHelp"
+                    placeholder="Email"
+                  />
+                </div>
+                <button type="submit" class="btn btn-newsletter">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
